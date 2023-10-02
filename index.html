@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="img/Sally.jpg"/>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nabla&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -94,7 +95,7 @@
                 <h1 class="titulo">Fiat Uno</h1>
             </div>
         </div>
-    <section>
+    </section>
     <div id="upmenu">
         <h1>Sobre a Loja</h1>
             <br>
@@ -104,6 +105,36 @@
                 responsavel e altamente preparada para reparo de danos do seu veículo, ta esperando o que?
             </p>
     </div>
+   
+        <section class="carrosel">
+            <h2 class="carrosel__titulo">Ultimos laçamentos</h2>
+                <!-- Slider main container -->
+            <div class="swiper">
+                <!--Additional required wrapper -->
+            <div class="swipper-wrapper">
+                <!-- Slides -->
+            <div class="swiper-slide"><img src="img/gol_quadrado.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Fuca.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="img/BMW.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/GTI.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/kombi.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="img/RAM.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Land.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Onix.jpg" alt=""></div>
+            ...
+            </div>
+            <!--If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!--If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+             </div>
+    
+        </section>
     <div id="menub">
         <div class="mini_1">
             <h2>De uma olhada nas nossas redes sociais!!</h2>
@@ -127,5 +158,16 @@
             
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+              spaceBetween: 10,
+              slidesPerView:3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+        </script>
 </body>
 </html>
